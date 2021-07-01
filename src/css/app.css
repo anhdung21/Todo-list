@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.ui-container {
+  min-width: 200px;
+  padding-top: 10vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url('../img/finall.png');
+  background-size: cover;
+}
+
+.ui-form {
+  padding: 20px 30px;
+  width: 60%;
+  height: 70vh;
+  border: 1px #3483eb solid;
+  border-radius: 10px;
+  box-shadow: 5px 10px 10px grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+
+.todo-list {
+  overflow-y: auto;
+  height: 100%;
+  width: 70%;
+  margin-left: 10%;
+}
