@@ -8,6 +8,7 @@ const InputAdd = () => {
   const [todoName, setTodoName] = useState('');
   const [deadline, setDeadline] = useState('');
 
+  //add to do task to db
   const handleAddTodo = (e) => {
     e.preventDefault();
     console.log(todoName);

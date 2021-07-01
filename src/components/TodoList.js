@@ -9,6 +9,7 @@ import DeleteIcon from '@material-ui/icons/Delete';
 const TodoList = ({ props }) => {
   const [checked, setChecked] = useState(props.isDone);
 
+  //togle checkbox and save to db
   const handleChangeCheckbox = (event) => {
     setChecked(event.target.checked);
     firestore.collection('todo-list').doc(props.id).update({
@@ -16,6 +17,7 @@ const TodoList = ({ props }) => {
     });
   };
 
+  //delete task
   const deleteTodo = () => {
     console.log('delete');
     firestore.collection('todo-list').doc(props.id).delete();
